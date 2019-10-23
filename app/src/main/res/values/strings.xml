@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">D" "&amp;" "A</string>
+    <!--Delmar" "&amp;" "Atallah-->
+    <!--Login-->
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="forgot_password">forgent password ??</string>
+    <string name="login">Login</string>
+    <string name="logo">logo</string>
+    <string name="welcome">Welcome" "</string>
+    <string name="Please_login_here">please login here</string>
+    <string name="sign_up">Sign up</string>
+
+
+    <!--main-->
+    <string name="promotions">Promotions</string>
+    <string name="prescriptions">Prescriptions</string>
+    <string name="orders">Orders</string>
+    <string name="branches">Branches</string>
+    <string name="profile">Profile</string>
+    <string name="contact_up">Contact Up</string>
+    <string name="medical_remider">Medical Remider</string>
+
+    <string name="search">Search</string>
+
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">MedMark</string>
+    <string name="nav_header_subtitle">in your hand</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>

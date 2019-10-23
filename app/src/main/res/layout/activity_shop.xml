@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shop.Shop"
+    style="@style/background"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shop_rcvw_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/very_large_margin"
+        tools:listitem="@layout/item_medicine_order"/>
+
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/shop_flbut_order"
+        android:layout_width="@dimen/fab_size_mini"
+        android:layout_height="@dimen/fab_size_mini"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_shopping_cart_white_24dp"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

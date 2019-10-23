@@ -1,0 +1,76 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar"><!--Theme.AppCompat.Light.DarkActionBar-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/tahm_regular</item>
+
+
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:layoutDirection">ltr</item>
+
+
+
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+
+
+
+
+    </style>
+
+
+
+    <style name="PopupMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/bg_gray_lite</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppTheme.CustomTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+
+    <style name="background">
+        <item name="android:background">@mipmap/background</item>
+    </style>
+
+
+    <style name="Theme_Dialog" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="DialogAnimationLeft">
+        <item name="android:windowEnterAnimation">@anim/slide_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_right</item>
+    </style>
+
+<style name="main">
+    <item name="android:background">@drawable/bg_blue_main</item>
+    <item name="android:padding">@dimen/large_margin</item>
+</style>
+
+
+</resources>
+
+

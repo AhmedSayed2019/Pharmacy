@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layoutDirection="rtl"
+    android:background="@drawable/bg_gray_lite"
+    android:layout_marginVertical="@dimen/small_margin"
+    >
+    <!--    android:background="@drawable/bg_box"-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layoutDirection="inherit"
+        android:layout_weight="8"
+        android:padding="@dimen/small_margin"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/itemMyOrder_img_image"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="4"
+            android:src="@mipmap/medicine"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/normal_margin" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:padding="@dimen/normal_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:minHeight="@dimen/normal_hight_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name : "
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/itemMyOrder_txvw_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="amoxil forte 250 mg"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/normal_hight_text"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/normal_hight_text"
+                    android:text="Price : "
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/itemMyOrder_txvw_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/normal_hight_text"
+                    android:text="11.00 EGP"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/normal_hight_button"
+
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/itemMyOrder_but_add"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:minWidth="@dimen/normal_hight_button"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:gravity="center"
+                        android:textSize="@dimen/very_large_text"
+                        android:textColor="@color/black"
+                        android:background="@drawable/bg_blue_lite"/>
+                    <TextView
+                        android:id="@+id/itemMyOrder_txvw_number"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:minWidth="@dimen/normal_hight_button"
+                        android:layout_weight="1"
+                        android:text="3"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        />
+
+
+
+
+                    <Button
+                        android:id="@+id/itemMyOrder_but_sup"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:minWidth="@dimen/normal_hight_button"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:gravity="center"
+                        android:textSize="@dimen/very_large_text"
+                        android:textColor="@color/black"
+                        android:background="@drawable/bg_box"/>/>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:minHeight="@dimen/normal_hight_button"
+                    android:layout_weight="2"
+
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/normal_hight_button"
+                        android:layout_alignParentEnd="true"
+                        android:src="@mipmap/ic_delete"
+                        android:padding="@dimen/small_margin"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/bg_blue_lite"
+        android:layout_margin="@dimen/small_margin"
+        android:paddingHorizontal="@dimen/small_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Unit"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/small_margin"/>
+
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/itemMyOrder_rdut_box"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="box"
+                />
+
+            <RadioButton
+                android:id="@+id/itemMyOrder_rdut_tab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="tab"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/small_margin"-->
+        <!--android:background="@color/colorPrimary"/>-->
+
+</LinearLayout>

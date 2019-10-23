@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gray_lite"
+    android:paddingHorizontal="@dimen/large_margin"
+    android:paddingVertical="@dimen/small_margin"
+    android:layout_margin="@dimen/large_margin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/normal_margin">
+        <ImageView
+            android:id="@+id/itemMyOrder_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:scaleType="fitXY"
+            android:gravity="center"
+            android:src="@mipmap/medicine"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/gray_box"-->
+            <!--android:text="number"-->
+            <!--android:gravity="center" />-->
+            <TextView
+                android:id="@+id/itemMyOrder_number"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:text="4"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Unit"-->
+            <!--android:background="@drawable/gray_box"-->
+            <!--android:gravity="center" />-->
+            <TextView
+                android:id="@+id/itemMyOrder_type"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="box"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            >
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="price"-->
+            <!--android:background="@drawable/gray_box"-->
+            <!--android:gravity="center" />-->
+            <TextView
+                android:id="@+id/itemMyOrder_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="45 EGP" />/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/itemMyOrder_name"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingHorizontal="@dimen/large_margin"
+        android:text="panadol"/>
+
+
+
+</LinearLayout>
